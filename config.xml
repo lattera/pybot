@@ -1,0 +1,24 @@
+<pybot version="0.1">
+	<acl>
+		<role name="Admin" />
+		<role name="SuperAdmin" />
+		<role name="User" />
+		<role name="Guest" />
+		<role name="Voice" />
+	</acl>
+	<network name="Binrev">
+		<net hostname="irc.binrev.net" port="6667" />
+		<handle nick="testbot" />
+		<channel name="#lattbot" />
+		
+		<user nick="lattera" password="sup3rs3cr3t">
+			<userrole name="SuperAdmin" />
+			<userrole name="Admin" />
+			<userrole name="User" />
+			<userrole name="Voice" />
+		</user>
+		<user nick="*">
+			<userrole name="Guest" />
+		</user>
+	</network>
+</pybot>
